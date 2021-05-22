@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* global styling */
+
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    color: rgb(107, 104, 104)
+}
+
+/* navbar */
+
+.navbar-brand span {
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    height: 2.5rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.signup-btn {
+    border-radius: 18px;
+}
+
+/* hero section */
+
+.form-select {
+    border: none;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.underline {
+    margin-top: 0rem;
+    margin-right: 1rem;
+    height: 3px;
+}
+
+.rentals {
+    border-radius: 10px;
+    padding:2rem;
+    width: 30rem;
+    margin:1rem;
+}
