@@ -8,6 +8,13 @@ html, body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+    color:#000;
+}
+a:hover{
+    color:#000;
+}
 
 .icon {
     color: rgb(107, 104, 104)
@@ -50,7 +57,18 @@ html, body {
 
 .rentals {
     border-radius: 10px;
-    padding:2rem;
+    padding: 2rem;
     width: 30rem;
-    margin:1rem;
+    margin: 1rem;
+}
+
+/* search box */
+
+.search-box {
+    max-width: 25rem;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
 }
