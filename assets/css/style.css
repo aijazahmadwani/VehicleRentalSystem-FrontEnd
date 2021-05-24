@@ -85,6 +85,34 @@ a:hover {
     box-shadow: none;
 }
 
+/* vehicle detail page */
+
+.vehicle-attributes span {
+    font-size: .8rem;
+}
+
+.vehicle-attributes p {
+    font-size: 1rem;
+    color: rgb(31, 28, 28);
+    font-weight: 500;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(88, 231, 200);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgb(109, 119, 117);
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     .rentals {
         padding: 3px;
