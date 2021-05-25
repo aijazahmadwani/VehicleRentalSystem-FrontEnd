@@ -85,7 +85,14 @@
                 <i class="fa fa-lock"></i>
                 <input type="password" placeholder="Confirm Password" id="password2" name="password" required>
             </div>
+            <div class="input">
+                <label for="exampleFormControlFile1" class="fs-5">Upload your identity card (eg. Aadhar card, voted id etc)</label><br>
+                <input type="file" class=" m-2" id="photo" accept=".jpg, .png, .jpeg" onchange="validate(this);"
+                    data-width="160" data-height="140" data-size="75" data-preview="imagePreview" name="photo"
+                    required="">
+            </div>
             <button class="btn btn-md btn-primary" type="submit">Sign up</button>
+            <p>Already a user? <a href="./login.html">Login here</a></p>
 
         </form>
 
