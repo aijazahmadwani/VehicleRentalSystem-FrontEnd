@@ -27,6 +27,11 @@ a:hover {
     filter: invert(37%) sepia(87%) saturate(440%) hue-rotate(138deg) brightness(97%) contrast(99%);
 }
 
+.how-it-works-icon {
+    transition: .5s;
+    filter: invert(100%) sepia(0%) saturate(1100%) hue-rotate(133deg) brightness(105%) contrast(108%);
+}
+
 .icon {
     color: rgb(107, 104, 104)
 }
@@ -184,3 +189,36 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+.htwDashedLine {
+    position: absolute;
+    margin: 45px 80px 0 100px;
+    width: 65%;
+    z-index: -1;
+    border: 6px dotted #000;
+    border-style: none none dotted;
+    color: #fff;
+    background-color: #fff;
+}
+
+.how-it-works-icon-background {
+    transition: .5s;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(7, 163, 129);
+    margin: 0 auto;
+}
+
+.how-it-works-icon-background:hover .how-it-works-icon {
+    filter: invert(10%) sepia(11%) saturate(704%) hue-rotate(169deg) brightness(102%) contrast(90%);
+}
+
+.how-it-works-icon-background:hover {
+    transform: scale(.9);
+    box-shadow: 0 0 60px 30px #fff, /* inner white */
+    0 0 40px 7px rgb(47, 40, 47), /* middle magenta */
+    0 0 40px 7px rgb(6, 245, 245);
+    /* outer cyan */
+}
