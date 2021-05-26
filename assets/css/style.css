@@ -228,7 +228,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /* fixed background image */
 
 .fixed {
-    background-image: url('/assets/images/car-bg.jpg');
+    background-image: url('../images/car-bg.jpg');
     z-index: -1;
 }
 
