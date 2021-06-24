@@ -140,24 +140,13 @@
                         </tr>
                     </tbody>
                 </table>
-                <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its
-                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                    as opposed to using
-                    'Content here, content here', making it look like readable English. Many desktop publishing packages
-                    and web page
-                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
-                    many web sites
-                    still in their infancy. Various versions have evolved over the years, sometimes by accident,
-                    sometimes on purpose
-                    (injected humour and the like).</p> -->
-
             </div>
             <div class="col-md-5 shadow mt-1">
                 <h4 class=" fs-2">Maruti Alto K10</h4>
                 <p class="fs-3 fw-bolder">₹ 1100 <i class="fs-6 fw-light">/month</i></p>
                 <p class="fs-6 text-muted">Inclusive of all taxes</p>
-                <button type="button" class="btn btn-primary w-100 btn-lg">Book Now</button>
+                <button type="button" class="btn btn-primary w-100 btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#booknow">Book Now</button>
                 <p style="margin-top: 1rem;"> <i class="fas fa-check-circle m-1" style="color:green;"></i>Extend any
                     time at normal prices. <a href="" class="ps-1"><u style="color:rgb(2, 124, 155)">Details</u></a></p>
                 <p> <i class="fas fa-check-circle m-1" style="color:green;"></i>Return anytime, Just pay fee difference
@@ -165,6 +154,50 @@
                 </p>
                 <button type="button" class="btn btn-outline-primary w-100 btn-lg"><i class="fas fa-phone-alt"></i> Call
                     us to know more</button>
+
+
+                <!-- modal -->
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booknow">
+                    Launch static backdrop modal
+                </button> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="booknow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Checkout</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="startDate" class="form-label">StartDate</label>
+                                        <input type="date" class="form-control" id="startDate" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="endDate" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="endDate" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="fs-3">Total Price = <span class="fs-3 fw-bold"
+                                                style="color:rgb(33, 139, 14)">&#8377
+                                                1800.00</span> </p>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100 btn-lg">Pay Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
